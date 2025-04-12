@@ -1,0 +1,26 @@
+{
+  "name": "eduhub-fronted",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "remixicon": "^4.6.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@arco-design/web-vue": "^2.57.0",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "@vitejs/plugin-vue-jsx": "^4.1.2",
+    "unplugin-auto-import": "^19.1.2",
+    "unplugin-vue-components": "^28.4.1",
+    "vite": "^6.2.4",
+    "vite-plugin-mock": "^3.0.2",
+    "vite-plugin-vue-devtools": "^7.7.2"
+  }
+}
