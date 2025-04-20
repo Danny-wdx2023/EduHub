@@ -31,7 +31,7 @@
     </div>
 </template>
 <script setup>
-    import Rank from "../components/HomeView/Rank.vue";
+    import Rank from "@/components/HomeView/Rank.vue";
     import { ref, inject } from "vue";
     import { RouterLink } from "vue-router";
     let oracle = ref({}), userData = ref({}), events = ref([]);
@@ -41,7 +41,7 @@
     getData("/api/getUserData", userData)();
     getData("/api/getEvents", events)();
 </script>
-<style scoped>
+<style scoped lang="scss">
     div#home-root{
         position: absolute;
         left: 2vw;
@@ -85,6 +85,9 @@
     div.welcome{
         font-size: 28px;
     }
+    a {
+        color: dodgerblue;
+    }
     div.now{
         color: green;
         font-weight: bold;
@@ -96,10 +99,11 @@
         flex-direction: column;
         align-items: center;
         gap: 6px;
-    }
-    div.dayLeftContainer > div > div{
-        display: inline;
-        color: gray;
+
+        & > div > div{
+            display: inline;
+            color: gray;
+        }
     }
     div.dayLeft::before{
         content: attr(day);
@@ -116,18 +120,21 @@
         grid-auto-flow: column;
         row-gap: 20px;
         column-gap: 40px;
-    }
-    div.oracle > div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    div.oracle > div:is(:nth-child(1), :nth-child(2)) > :nth-child(1){
-        color: red;
-    }
-    div.oracle > div > div:nth-child(2){
-        color: var(--color-neutral-6);
-        font-size: 14px;
+
+        & > div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &:is(:nth-child(1), :nth-child(2)) > :nth-child(1){
+                color: red;
+            }
+
+            & > div:nth-child(2){
+                color: var(--color-neutral-6);
+                font-size: 14px;
+            }
+        }
     }
     .name-filter {
         padding: 20px;

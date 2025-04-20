@@ -8,57 +8,57 @@ export default {
                 {
                     rank: 0,
                     name: "零小灵",
-                    chinese: 150,
-                    maths: 150,
-                    english: 150,
-                    physics: 150,
-                    chemistry: 150,
-                    total: 750
+                    chinese: 100,
+                    maths: 100,
+                    english: 100,
+                    physics: 100,
+                    chemistry: 100,
+                    total: 500
                 }, {
                     rank: 1,
                     name: "沈贝缇",
-                    chinese: 140,
-                    maths: 145,
-                    english: 140,
-                    physics: 140,
-                    chemistry: 140,
-                    total: 705
+                    chinese: 80,
+                    maths: 85.3,
+                    english: 82,
+                    physics: 91,
+                    chemistry: 91,
+                    total: 429.3
                 }, {
                     rank: 2,
-                    name: "Unknown",
-                    chinese: 0,
-                    maths: 0,
-                    english: 0,
-                    physics: 0,
-                    chemistry: 0,
-                    total: 0
+                    name: "鲍嵘",
+                    chinese: 79,
+                    maths: 81.3,
+                    english: 84,
+                    physics: 92,
+                    chemistry: 81,
+                    total: 417.3
                 }, {
-                    rank: 3,
-                    name: "Unknown",
-                    chinese: 0,
-                    maths: 0,
-                    english: 0,
-                    physics: 0,
-                    chemistry: 0,
-                    total: 0
+                    rank: 2,
+                    name: "王岱熙",
+                    chinese: 88,
+                    maths: 77.3,
+                    english: 82,
+                    physics: 93,
+                    chemistry: 77,
+                    total: 417.3
                 }, {
                     rank: 4,
-                    name: "Unknown",
-                    chinese: 0,
-                    maths: 0,
-                    english: 0,
-                    physics: 0,
-                    chemistry: 0,
-                    total: 0
+                    name: "羌书正",
+                    chinese: 78,
+                    maths: 85.3,
+                    english: 73,
+                    physics: 86,
+                    chemistry: 83,
+                    total: 405.3
                 }, {
                     rank: 5,
-                    name: "邹致勋",
-                    chinese: 130,
-                    maths: 140,
-                    english: 135,
-                    physics: 135,
-                    chemistry: 130,
-                    total: 670
+                    name: "胡心怡",
+                    chinese: NaN,
+                    maths: NaN,
+                    english: NaN,
+                    physics: NaN,
+                    chemistry: NaN,
+                    total: 403.7
                 }
             ]
         }

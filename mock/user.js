@@ -5,7 +5,7 @@ export default {
         return {
             code: 200,
             data: {
-                name: "Richard Zou",
+                name: "邹致勋",
                 id: "bricteria",
                 email: "bricteria@u235.eduhub.com",
                 phonenumber: null,

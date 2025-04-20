@@ -29,12 +29,12 @@ const columns = [
                 slotName: "name-filter",
             }
         }, 
-        { title: "语文", dataIndex: "chinese", sortable: { sortDirections: ['ascend', 'descend'] } }, 
-        { title: "数学", dataIndex: "maths", sortable: { sortDirections: ['ascend', 'descend'] } }, 
-        { title: "英语", dataIndex: "english", sortable: { sortDirections: ['ascend', 'descend'] } }, 
-        { title: "科学1", dataIndex: "physics", sortable: { sortDirections: ['ascend', 'descend'] } },
-        { title: "科学二", dataIndex: "chemistry", sortable: { sortDirections: ['ascend', 'descend'] } },
-        { title: "总分", dataIndex: "total", sortable: { sortDirections: ['ascend', 'descend'] } }
+        { title: "语文", dataIndex: "chinese", sortable: { sortDirections: ['descend'] } }, 
+        { title: "数学", dataIndex: "maths", sortable: { sortDirections: ['descend'] } }, 
+        { title: "英语", dataIndex: "english", sortable: { sortDirections: ['descend'] } }, 
+        { title: "科学1", dataIndex: "physics", sortable: { sortDirections: ['descend'] } },
+        { title: "科学二", dataIndex: "chemistry", sortable: { sortDirections: ['descend'] } },
+        { title: "总分", dataIndex: "total" }
             
     ]
 const getData = inject("getData");

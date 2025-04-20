@@ -38,6 +38,9 @@ const yes = [
     }, {
         "name": "刷题",
         "detail": "成为虐题狂魔"
+    }, {
+        "name": "摸鱼",
+        "detail": "成为划水王"
     }
 ]
 const no = [
@@ -80,6 +83,9 @@ const no = [
     }, {
         "name": "刷题",
         "detail": "一分不得"
+    }, {
+        "name": "摸鱼",
+        "detail": "被父母制裁"
     }
 ]
 
@@ -101,6 +107,7 @@ function pick(){
 export default {
     url: "/api/getOracle",
     method: "get",
+    delay: 6000,
     response: (request) => {
         return {
             code: 200,
