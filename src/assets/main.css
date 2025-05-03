@@ -16,6 +16,12 @@ body {
   background-color: aliceblue;
   font-family: "MiSans", "Microsoft YaHei", sans-serif;
 }
+body[arco-theme="dark"] {
+  background-color: #333333;
+  i.ri-arrow-right-line {
+    color: white;
+  }
+}
 a {
   text-decoration: none;
   color: initial;

@@ -1,9 +1,15 @@
 <template>
     <div id="chat-root">
         <a-list id="friends" scrollbar :max-height="600">
+            <template #empty>
+                <a-empty>
+                    <template #image><i class="ri-error-warning-line"></i></template>
+                    暂无好友
+                </a-empty>
+            </template>
             <template #header><i class="ri-chat-smile-2-line"></i> 好友列表</template>
             <a-list-item v-for="friend in friends" :key="friend.id"  @click="changeActiveFriend(friend)"
-                :style="{ order: friend.skipUp ? 1 : 2, background: friend.skipUp ? 'linear-gradient(to right, transparent 1%, azure 1%, azure 99%, transparent 99%)' : 'initial' }"
+                :style="{ order: friend.skipUp ? 1 : 2, background: friend.skipUp ? 'linear-gradient(to right, transparent 1%, var(--color-primary-light-2) 1%, var(--color-primary-light-2) 99%, transparent 99%)' : 'initial' }"
             >
                 <a-list-item-meta :title="friend.name" :description="friend.signature">
                     <template #avatar>
@@ -25,8 +31,7 @@
         </a-list>
         <div id="chat">
             <div id="chat-heading">
-                <a-typography-title :heading="3">{{ activeFriend.name ? activeFriend.name : '聊天' }}</a-typography-title>
-
+                <a-typography-title :heading="3">{{ activeFriend.name ? activeFriend.name : '聊天' }} <a-badge v-show="activeFriend.online" text="在线"></a-badge></a-typography-title>
                 <a-divider></a-divider>
             </div>
             <div id="chat-history">
@@ -48,7 +53,7 @@
                 <a-textarea placeholder="请输入消息..." :max-length="1000" allow-clear show-word-limit :auto-size="{ minRows: 3, maxRows: 6 }" />
                 <div id="msg-option-control">
                     <a-checkbox value="P2P" default-checked>P2P</a-checkbox>
-                    <a-tooltip content="该功能为VIP功能"><a-checkbox value="crypt" ><div vip>加密</div></a-checkbox></a-tooltip>
+                    <a-tooltip content="该功能为VIP功能"><a-checkbox value="crypt"><div vip>加密</div></a-checkbox></a-tooltip>
                     <a-button type="text">发送</a-button>
                 </div>
             </div>
@@ -88,19 +93,19 @@
     #friends {
         width: 100%;
         height: 600px;
-        background-color: white;
+        background-color: var(--color-bg-1);
     }
     :deep(.arco-list-content) {
         display: flex;
         flex-direction: column;
     }
     .arco-list-item:hover {
-        background: linear-gradient(to right, transparent 1%, lightgray 1%, lightgray 99%, transparent 99%) !important;
+        background: linear-gradient(to right, transparent 1%, var(--color-neutral-2) 1%, var(--color-neutral-2) 99%, transparent 99%) !important;
     }
     #chat {
         margin-right: 0;
         height: 600px;
-        background-color: #fff;
+        background-color: var(--color-bg-1);
         display: grid;
         grid-template-rows: 100px 3fr 1fr;
     }

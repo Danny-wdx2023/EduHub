@@ -41,6 +41,7 @@
         width: 80px;
         text-align: center;
         cursor: pointer;
+        color: var(--color-text-3);
     }
     input[type="radio"] {
         display: none;
@@ -48,13 +49,13 @@
     span.glider {
         position: absolute;
         width: 100px;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: var(--color-fill-1);
         height: 36px;
         border-radius: 5px;
         transition: transform .5s;
     }
     input:checked + label {
-        color: steelblue;
+        color: var(--color-text-1);
     }
     input#select-search:checked ~ span.glider {
         transform: translate(0);

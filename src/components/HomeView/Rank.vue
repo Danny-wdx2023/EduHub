@@ -40,3 +40,17 @@ const columns = [
 const getData = inject("getData");
 getData("/api/getRank", rank)();
 </script>
+<style scoped>
+    .name-filter {
+        padding: 20px;
+        background: var(--color-bg-5);
+        border: 1px solid var(--color-neutral-3);
+        border-radius: var(--border-radius-medium);
+        box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+    }
+
+    .name-filter-control {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>

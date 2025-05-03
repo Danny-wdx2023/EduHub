@@ -108,10 +108,8 @@ export default {
     url: "/api/getOracle",
     method: "get",
     delay: 6000,
-    response: (request) => {
-        return {
-            code: 200,
-            data: pick(),
-        }
-    }
+    response: (request) => ({
+        code: 200,
+        data: pick(),
+    })
 }

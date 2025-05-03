@@ -75,7 +75,7 @@
         object-position: center;
     }
     div.rightSide{
-        background-color: white;
+        background-color: var(--color-bg-1);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -84,6 +84,7 @@
     }
     div.welcome{
         font-size: 28px;
+        color: var(--color-text-1)
     }
     a {
         color: dodgerblue;
@@ -99,7 +100,7 @@
         flex-direction: column;
         align-items: center;
         gap: 6px;
-
+        color: var(--color-text-1);
         & > div > div{
             display: inline;
             color: gray;
@@ -107,7 +108,7 @@
     }
     div.dayLeft::before{
         content: attr(day);
-        color: initial;
+        color: var(--color-text-1);
     }
     div.rightSide > .arco-btn{
         font-size: 18px;
@@ -129,23 +130,13 @@
             &:is(:nth-child(1), :nth-child(2)) > :nth-child(1){
                 color: red;
             }
-
+            &:is(:nth-child(3), :nth-child(4)) > :nth-child(1){
+                color: var(--color-text-1)
+            }
             & > div:nth-child(2){
                 color: var(--color-neutral-6);
                 font-size: 14px;
             }
         }
-    }
-    .name-filter {
-        padding: 20px;
-        background: var(--color-bg-5);
-        border: 1px solid var(--color-neutral-3);
-        border-radius: var(--border-radius-medium);
-        box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
-    }
-
-    .name-filter-control {
-        display: flex;
-        justify-content: space-between;
     }
 </style>

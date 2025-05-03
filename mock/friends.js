@@ -9,61 +9,71 @@ export default {
                 id: "sean",
                 signature: "数学至高无上",
                 notification: false,
-                skipUp: false
+                skipUp: false,
+                online: false,
             }, {
                 name: "李宸",
                 id: "richard-li",
                 signature: "我是李宸",
                 notification: true,
-                skipUp: false
+                skipUp: false,
+                online: false,
             }, {
                 name: "王紫钰",
                 id: "brick",
                 signature: "我是板砖",
                 notification: true,
-                skipUp: true
+                skipUp: true,
+                online: true,
             }, {
                 name: "刘希言",
                 id: "hcl",
                 signature: "我是稀盐酸",
                 notification: true,
-                skipUp: true
+                skipUp: true,
+                online: true,
             }, {
                 name: "路人甲",
                 id: "1",
                 signature: "一位路人甲走过",
                 notification: false,
-                skipUp: false
+                skipUp: false,
+                online: false,
             }, {
                 name: "路人甲",
                 id: "2",
                 signature: "一位路人甲走过",
                 notification: false,
-                skipUp: false
+                skipUp: false,
+                online: false,
             }, {
                 name: "路人甲",
                 id: "3",
                 signature: "一位路人甲走过",
                 notification: false,
-                skipUp: false
+                skipUp: false,
+                online: false,
             }, {
                 name: "路人甲",
                 id: "4",
                 signature: "一位路人甲走过",
                 notification: false,
-                skipUp: false
+                skipUp: false,
+                online: false,
             }, {
                 name: "路人甲",
                 id: "5",
                 signature: "一位路人甲走过",
                 notification: false,
-                skipUp: false
+                skipUp: false,
+                online: false,
             }, {
                 name: "路人甲",
                 id: "6",
                 signature: "一位路人甲走过",
                 notification: false,
-                skipUp: false
+                skipUp: false,
+                online: false,
             }]
         }
     }

@@ -77,9 +77,12 @@
         position: fixed;
         top: calc(50vh - 20px);
         height: 30px;
-        background-color: skyblue
+        background-color: var(--color-link-light-4);
     }
     .arco-btn:hover{
-      background-color: lightsteelblue;
+      background-color: var(--color-link-light-3);
+    }
+    .arco-btn:active{
+        background-color: var(--color-link-light-2);
     }
 </style>
